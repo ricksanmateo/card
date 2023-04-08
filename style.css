@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;500;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background: #eee;
+  font-family: 'Inter', sans-serif;
+}
+
+.card {
+  width: 340px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-image img {
+  width: 100%;
+  height: 160px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: cover;
+}
+
+.profile-image img {
+  width: 120px;
+  height: 120px;
+  z-index: 1;
+  position: relative;
+  margin-top: -75px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  border: 1px solid #111;
+  transition-duration: 0.4s;
+  transition-property: transform;
+}
+
+.profile-image img:hover {
+  transform: scale(1.1);
+}
+
+.card-content h3 {
+  font-size: 25px;
+  font-weight: 500;
+  text-align: center;
+  margin: 0;
+}
+
+.card-content p {
+  font-size: 16px;
+  text-align: justify;
+  padding: 0 20px 5px 20px;
+}
+
+.icons  {
+  text-align: center;
+  padding-top: 10px;
+  margin-bottom: 30px;
+}
+
+.icons a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #0abde3;
+  padding: 0 18px;
+  transition-duration: 0.4s;
+  transition-property: transform;
+}
+
+.icons a:hover {
+  color: #000;
+  transform: scale(1.5);
+}
